@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Contact Page</title>
+  </head>
+  <body>
+    <header class="fixed w-full top-0 z-10 shadow-lg bg-white">
+      <nav class="flex justify-between items-center px-4 py-3">
+        <div>
+          <i id="menu-toggle" class="fas fa-bars cursor-pointer"></i>
+          <a href="#" class="font-dancing text-3xl ml-2 text-orange"
+            >Dashboard</a
+          >
+        </div>
+
+        <ul class="flex gap-10">
+          <li>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-bell"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-person"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="mt-14">
+      <!-- Side Menu -->
+      <aside>
+        <ul class="flex flex-col gap-4">
+          <li>
+            <a href="./index.html"><i class="fa-solid fa-house mr-4"></i>Home</a>
+          </li>
+          <li>
+            <a href="./tables.html"><i class="fa-solid fa-table mr-4"></i>Tables</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-brands fa-product-hunt mr-4"></i>Products</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-question mr-5"></i>FAQ</a>
+          </li>
+          <li>
+            <a href="./contact.html"
+              ><i class="fa-solid fa-address-book mr-4"></i>Contact</a
+            >
+          </li>
+        </ul>
+      </aside>
+
+      <div id="main-content">
+        <!-- Main Content -->
+        <div class="container mx-auto p-6 flex justify-between w-full">
+          <div class="grid grid-cols-2 gap-6 w-[50%] mr-4">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <div class="flex items-center mb-4">
+                <i class="fas fa-map-marker-alt text-blue-500 text-2xl"></i>
+                <h3 class="ml-4 text-xl font-semibold">Address</h3>
+              </div>
+              <p>A108 Adam Street,<br />New York, NY 535022</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <div class="flex items-center mb-4">
+                <i class="fas fa-phone-alt text-blue-500 text-2xl"></i>
+                <h3 class="ml-4 text-xl font-semibold">Call Us</h3>
+              </div>
+              <p>+1 5589 55488 55<br />+1 6678 254445 41</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <div class="flex items-center mb-4">
+                <i class="fas fa-envelope text-blue-500 text-2xl"></i>
+                <h3 class="ml-4 text-xl font-semibold">Email Us</h3>
+              </div>
+              <p>info@example.com<br />contact@example.com</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <div class="flex items-center mb-4">
+                <i class="fas fa-clock text-blue-500 text-2xl"></i>
+                <h3 class="ml-4 text-xl font-semibold">Open Hours</h3>
+              </div>
+              <p>Monday - Friday<br />9:00AM - 05:00PM</p>
+            </div>
+          </div>
+          <div class="mt-6 bg-white p-6 rounded-lg shadow-md w-[50%]">
+            <form>
+              <div class="grid grid-cols-2 gap-4 mb-4">
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  class="border border-gray-300 p-2 rounded w-full"
+                />
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  class="border border-gray-300 p-2 rounded w-full"
+                />
+              </div>
+              <input
+                type="text"
+                placeholder="Subject"
+                class="border border-gray-300 p-2 rounded w-full mb-4"
+              />
+              <textarea
+                placeholder="Message"
+                class="border border-gray-300 p-2 rounded w-full mb-4"
+                rows="6"
+              ></textarea>
+              <button
+                type="submit"
+                class="bg-blue-500 text-white px-4 py-2 rounded flex mx-auto"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+        <footer class="flex justify-between p-7 bg-gray">
+          <span>&copy; Right 2024</span>
+          <div>
+            <a href="#">Privacy & Policy</a>
+            <a href="#">Terms & Conditions</a>
+          </div>
+        </footer>
+      </div>
+    </main>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

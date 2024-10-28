@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Tables Page</title>
+  </head>
+  <body>
+    <header class="fixed w-full top-0 z-10 shadow-lg bg-white">
+      <nav class="flex justify-between items-center px-4 py-3">
+        <div>
+          <i id="menu-toggle" class="fas fa-bars cursor-pointer"></i>
+          <a href="#" class="font-dancing text-3xl ml-2 text-orange"
+            >Dashboard</a
+          >
+        </div>
+
+        <ul class="flex gap-10">
+          <li>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-bell"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-person"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="mt-14">
+      <!-- Side Menu -->
+      <aside>
+        <ul class="flex flex-col gap-4">
+          <li>
+            <a href="./index.html"
+              ><i class="fa-solid fa-house mr-4"></i>Home</a
+            >
+          </li>
+          <li>
+            <a href="./tables.html"><i class="fa-solid fa-table mr-4"></i>Tables</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-brands fa-product-hunt mr-4"></i>Products</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-question mr-5"></i>FAQ</a>
+          </li>
+          <li>
+            <a href="./contact.html"
+              ><i class="fa-solid fa-address-book mr-4"></i>Contact</a
+            >
+          </li>
+        </ul>
+      </aside>
+
+      <div id="main-content">
+        <!-- Main Content -->
+        <div class="grid grid-cols-2 gap-8 p-10">
+            <!-- Default Table -->
+          <div class="bg-white p-6 rounded-lg shadow-xl">
+            <h2 class="text-lg font-semibold text-blue-800 mb-4">
+              Default Table
+            </h2>
+            <table class="min-w-full bg-white">
+              <thead>
+                <tr>
+                  <th class="py-2 px-4 border-b">#</th>
+                  <th class="py-2 px-4 border-b">Name</th>
+                  <th class="py-2 px-4 border-b">Position</th>
+                  <th class="py-2 px-4 border-b">Age</th>
+                  <th class="py-2 px-4 border-b">Start Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="py-2 px-4 border-b">1</td>
+                  <td class="py-2 px-4 border-b">Brandon Jacob</td>
+                  <td class="py-2 px-4 border-b">Designer</td>
+                  <td class="py-2 px-4 border-b">28</td>
+                  <td class="py-2 px-4 border-b">2016-05-25</td>
+                </tr>
+                <tr>
+                  <td class="py-2 px-4 border-b">2</td>
+                  <td class="py-2 px-4 border-b">Bridie Kessler</td>
+                  <td class="py-2 px-4 border-b">Developer</td>
+                  <td class="py-2 px-4 border-b">35</td>
+                  <td class="py-2 px-4 border-b">2014-12-05</td>
+                </tr>
+                <tr>
+                  <td class="py-2 px-4 border-b">3</td>
+                  <td class="py-2 px-4 border-b">Ashleigh Langosh</td>
+                  <td class="py-2 px-4 border-b">Finance</td>
+                  <td class="py-2 px-4 border-b">45</td>
+                  <td class="py-2 px-4 border-b">2011-08-12</td>
+                </tr>
+                <tr>
+                  <td class="py-2 px-4 border-b">4</td>
+                  <td class="py-2 px-4 border-b">Angus Grady</td>
+                  <td class="py-2 px-4 border-b">HR</td>
+                  <td class="py-2 px-4 border-b">34</td>
+                  <td class="py-2 px-4 border-b">2012-06-11</td>
+                </tr>
+                <tr>
+                  <td class="py-2 px-4 border-b">5</td>
+                  <td class="py-2 px-4 border-b">Raheem Lehner</td>
+                  <td class="py-2 px-4 border-b">Dynamic Division Officer</td>
+                  <td class="py-2 px-4 border-b">47</td>
+                  <td class="py-2 px-4 border-b">2011-04-19</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Table with stripped rows -->
+          <div class="bg-white p-6 rounded-lg shadow-xl">
+            <h2 class="text-lg font-semibold text-blue-800 mb-4">
+              Table with stripped rows
+            </h2>
+            <table class="min-w-full bg-white">
+              <thead>
+                <tr>
+                  <th class="py-2 px-4 border-b">#</th>
+                  <th class="py-2 px-4 border-b">Name</th>
+                  <th class="py-2 px-4 border-b">Position</th>
+                  <th class="py-2 px-4 border-b">Age</th>
+                  <th class="py-2 px-4 border-b">Start Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-gray">
+                  <td class="py-2 px-4 border-b">1</td>
+                  <td class="py-2 px-4 border-b">Brandon Jacob</td>
+                  <td class="py-2 px-4 border-b">Designer</td>
+                  <td class="py-2 px-4 border-b">28</td>
+                  <td class="py-2 px-4 border-b">2016-05-25</td>
+                </tr>
+                <tr>
+                  <td class="py-2 px-4 border-b">2</td>
+                  <td class="py-2 px-4 border-b">Bridie Kessler</td>
+                  <td class="py-2 px-4 border-b">Developer</td>
+                  <td class="py-2 px-4 border-b">35</td>
+                  <td class="py-2 px-4 border-b">2014-12-05</td>
+                </tr>
+                <tr class="bg-gray">
+                  <td class="py-2 px-4 border-b">3</td>
+                  <td class="py-2 px-4 border-b">Ashleigh Langosh</td>
+                  <td class="py-2 px-4 border-b">Finance</td>
+                  <td class="py-2 px-4 border-b">45</td>
+                  <td class="py-2 px-4 border-b">2011-08-12</td>
+                </tr>
+                <tr>
+                  <td class="py-2 px-4 border-b">4</td>
+                  <td class="py-2 px-4 border-b">Angus Grady</td>
+                  <td class="py-2 px-4 border-b">HR</td>
+                  <td class="py-2 px-4 border-b">34</td>
+                  <td class="py-2 px-4 border-b">2012-06-11</td>
+                </tr>
+                <tr class="bg-gray">
+                  <td class="py-2 px-4 border-b">5</td>
+                  <td class="py-2 px-4 border-b">Raheem Lehner</td>
+                  <td class="py-2 px-4 border-b">Dynamic Division Officer</td>
+                  <td class="py-2 px-4 border-b">47</td>
+                  <td class="py-2 px-4 border-b">2011-04-19</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Dark Table -->
+          <div class="bg-white p-6 rounded-lg shadow-xl">
+            <h2 class="text-lg font-semibold text-blue-800 mb-4">Dark Table</h2>
+            <table class="min-w-full bg-black text-white">
+              <thead>
+                <tr>
+                  <th class="py-2 px-4 border-b border-gray">#</th>
+                  <th class="py-2 px-4 border-b border-gray">Name</th>
+                  <th class="py-2 px-4 border-b border-gray">Position</th>
+                  <th class="py-2 px-4 border-b border-gray">Age</th>
+                  <th class="py-2 px-4 border-b border-gray">Start Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="py-2 px-4 border-b border-gray">1</td>
+                  <td class="py-2 px-4 border-b border-gray">
+                    Brandon Jacob
+                  </td>
+                  <td class="py-2 px-4 border-b border-gray">Designer</td>
+                  <td class="py-2 px-4 border-b border-gray">28</td>
+                  <td class="py-2 px-4 border-b border-gray">2016-05-25</td>
+                </tr>
+                <tr>
+                  <td class="py-2 px-4 border-b border-gray">2</td>
+                  <td class="py-2 px-4 border-b border-gray">
+                    Bridie Kessler
+                  </td>
+                  <td class="py-2 px-4 border-b border-gray">Developer</td>
+                  <td class="py-2 px-4 border-b border-gray">35</td>
+                  <td class="py-2 px-4 border-b border-gray">2014-12-05</td>
+                </tr>
+                <tr>
+                  <td class="py-2 px-4 border-b border-gray">3</td>
+                  <td class="py-2 px-4 border-b border-gray">
+                    Ashleigh Langosh
+                  </td>
+                  <td class="py-2 px-4 border-b border-gray">Finance</td>
+                  <td class="py-2 px-4 border-b border-gray">45</td>
+                  <td class="py-2 px-4 border-b border-gray">2011-08-12</td>
+                </tr>
+                <tr>
+                  <td class="py-2 px-4 border-b border-gray">4</td>
+                  <td class="py-2 px-4 border-b border-gray">
+                    Angus Grady
+                  </td>
+                  <td class="py-2 px-4 border-b border-gray">HR</td>
+                  <td class="py-2 px-4 border-b border-gray">34</td>
+                  <td class="py-2 px-4 border-b border-gray">2012-06-11</td>
+                </tr>
+                <tr>
+                  <td class="py-2 px-4">5</td>
+                  <td class="py-2 px-4">Raheem Lehner</td>
+                  <td class="py-2 px-4">Dynamic Division Officer</td>
+                  <td class="py-2 px-4">47</td>
+                  <td class="py-2 px-4">2011-04-19</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Table with hoverable rows -->
+          <div class="bg-white p-6 rounded-lg shadow-xl">
+            <h2 class="text-lg font-semibold text-blue-800 mb-4">
+              Table with hoverable rows
+            </h2>
+            <table class="min-w-full bg-white">
+              <thead>
+                <tr>
+                  <th class="py-2 px-4 border-b">#</th>
+                  <th class="py-2 px-4 border-b">Name</th>
+                  <th class="py-2 px-4 border-b">Position</th>
+                  <th class="py-2 px-4 border-b">Age</th>
+                  <th class="py-2 px-4 border-b">Start Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="hover:bg-gray">
+                  <td class="py-2 px-4 border-b">1</td>
+                  <td class="py-2 px-4 border-b">Brandon Jacob</td>
+                  <td class="py-2 px-4 border-b">Designer</td>
+                  <td class="py-2 px-4 border-b">28</td>
+                  <td class="py-2 px-4 border-b">2016-05-25</td>
+                </tr>
+                <tr class="hover:bg-gray">
+                  <td class="py-2 px-4 border-b">2</td>
+                  <td class="py-2 px-4 border-b">Bridie Kessler</td>
+                  <td class="py-2 px-4 border-b">Developer</td>
+                  <td class="py-2 px-4 border-b">35</td>
+                  <td class="py-2 px-4 border-b">2014-12-05</td>
+                </tr>
+                <tr class="hover:bg-gray">
+                  <td class="py-2 px-4 border-b">3</td>
+                  <td class="py-2 px-4 border-b">Ashleigh Langosh</td>
+                  <td class="py-2 px-4 border-b">Finance</td>
+                  <td class="py-2 px-4 border-b">45</td>
+                  <td class="py-2 px-4 border-b">2011-08-12</td>
+                </tr>
+                <tr class="hover:bg-gray">
+                  <td class="py-2 px-4 border-b">4</td>
+                  <td class="py-2 px-4 border-b">Angus Grady</td>
+                  <td class="py-2 px-4 border-b">HR</td>
+                  <td class="py-2 px-4 border-b">34</td>
+                  <td class="py-2 px-4 border-b">2012-06-11</td>
+                </tr>
+                <tr class="hover:bg-gray">
+                  <td class="py-2 px-4">5</td>
+                  <td class="py-2 px-4">Raheem Lehner</td>
+                  <td class="py-2 px-4">Dynamic Division Officer</td>
+                  <td class="py-2 px-4">47</td>
+                  <td class="py-2 px-4">2011-04-19</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <footer class="flex justify-between p-7 bg-gray">
+          <span>&copy; Right 2024</span>
+          <div>
+            <a href="#">Privacy & Policy</a>
+            <a href="#">Terms & Conditions</a>
+          </div>
+        </footer>
+      </div>
+    </main>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
