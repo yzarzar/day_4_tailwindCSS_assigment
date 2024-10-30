@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Form</title>
+  </head>
+  <body>
+    <header class="fixed w-full top-0 z-10 shadow-lg bg-white">
+      <nav class="flex justify-between items-center px-4 py-3">
+        <div>
+          <i id="menu-toggle" class="fas fa-bars cursor-pointer"></i>
+          <a href="#" class="font-dancing text-3xl ml-2 text-orange"
+            >Dashboard</a
+          >
+        </div>
+
+        <ul class="flex gap-10">
+          <li>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-bell"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-person"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="mt-14">
+      <!-- Side Menu -->
+      <aside>
+        <ul class="flex flex-col gap-4">
+          <li>
+            <a href="./index.html"
+              ><i class="fa-solid fa-house mr-4"></i>Home</a
+            >
+          </li>
+          <li>
+            <a href="./tables.html"
+              ><i class="fa-solid fa-table mr-4"></i>Tables</a
+            >
+          </li>
+          <li>
+            <a href="./product.html"
+              ><i class="fa-brands fa-product-hunt mr-4"></i>Products</a
+            >
+          </li>
+          <li>
+            <a href="./faq_page.html"
+              ><i class="fa-solid fa-question mr-5"></i>FAQ</a
+            >
+          </li>
+          <li>
+            <a href="./contact.html"
+              ><i class="fa-solid fa-address-book mr-4"></i>Contact</a
+            >
+          </li>
+          <li>
+            <a href="./form.html">
+              <i class="fa-solid fa-pencil-alt mr-4"></i>Form
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+      <div id="main-content">
+        <!-- Main Content -->
+        <div class="p-4">
+          <div
+            class="max-w-[600px] bg-white p-8 rounded-lg shadow-md w-full flex flex-col mx-auto"
+          >
+            <h2 class="text-2xl font-semibold mb-6 text-blue-600">
+              Multi Columns Form
+            </h2>
+            <form id="myForm" onsubmit="return validateForm(event)">
+              <div class="mb-4">
+                <label class="block text-gray-700 mb-2" for="name"
+                  >Your Name</label
+                >
+                <p class="text-red-500 text-sm hidden" id="nameError">
+                  Please enter your name.
+                </p>
+                <input
+                  class="w-full px-3 py-2 border rounded-md"
+                  type="text"
+                  id="name"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="grid grid-cols-2 gap-4 mb-4">
+                <div>
+                  <label class="block text-gray-700 mb-2" for="email"
+                    >Email</label
+                  >
+                  <p class="text-red-500 text-sm hidden" id="emailError">
+                    Please enter your name.
+                  </p>
+                  <input
+                    class="w-full px-3 py-2 border rounded-md"
+                    type="email"
+                    id="email"
+                    placeholder="Email"
+                  />
+                </div>
+                <div>
+                  <label class="block text-gray-700 mb-2" for="password"
+                    >Password</label
+                  >
+                  <p class="text-red-500 text-sm hidden" id="passwordError">
+                    Please enter your name.
+                  </p>
+                  <input
+                    class="w-full px-3 py-2 border rounded-md"
+                    type="password"
+                    id="password"
+                    placeholder="Password"
+                  />
+                </div>
+              </div>
+              <div class="mb-4">
+                <label class="block text-gray-700 mb-2" for="address"
+                  >Address</label
+                >
+                <p class="text-red-500 text-sm hidden" id="addressError">
+                  Please enter your address.
+                </p>
+                <input
+                  class="w-full px-3 py-2 border rounded-md"
+                  type="text"
+                  id="address"
+                  placeholder="1234 Main St"
+                />
+              </div>
+              <div class="mb-4">
+                <label class="block text-gray-700 mb-2" for="address2"
+                  >Address 2</label
+                >
+                <p class="text-red-500 text-sm hidden" id="address2Error">
+                  Please enter your Address 2.
+                </p>
+                <input
+                  class="w-full px-3 py-2 border rounded-md"
+                  type="text"
+                  id="address2"
+                  placeholder="Apartment, studio, or floor"
+                />
+              </div>
+              <div class="grid grid-cols-3 gap-4 mb-4 items-center">
+                <div>
+                  <label class="block text-gray-700 mb-2" for="city"
+                    >City</label
+                  >
+                  <p class="text-red-500 text-sm hidden" id="cityError">
+                    Please enter your city.
+                  </p>
+                  <input
+                    class="w-full px-3 py-2 border rounded-md"
+                    type="text"
+                    id="city"
+                    placeholder="City"
+                  />
+                </div>
+                <div>
+                  <label class="block text-gray-700 mb-2" for="state"
+                    >State</label
+                  >
+                  <p class="text-red-500 text-sm hidden" id="stateError">
+                    Please select your state.
+                  </p>
+                  <select class="w-full px-3 py-2 border rounded-md" id="state">
+                    <option value="" disabled>Choose...</option>
+                    <option value="yangon">Yangon Region</option>
+                    <option value="mandalay">Mandalay Region</option>
+                    <option value="ayeyarwady">Ayeyarwady Region</option>
+                    <option value="sagaing">Sagaing Region</option>
+                    <option value="magway">Magway Region</option>
+                    <option value="kayin">Kayin State</option>
+                    <option value="mon">Mon State</option>
+                    <option value="chin">Chin State</option>
+                    <option value="kachin">Kachin State</option>
+                    <option value="shan">Shan State</option>
+                    <option value="rakhine">Rakhine State</option>
+                    <option value="tanintharyi">Tanintharyi Region</option>
+                    <option value="nagas">Naga Self-Administered Zone</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-gray-700 mb-2" for="zip">Zip</label>
+                  <p class="text-red-500 text-sm hidden" id="zipError">
+                    Please enter your zip.
+                  </p>
+                  <input
+                    class="w-full px-3 py-2 border rounded-md"
+                    type="text"
+                    id="zip"
+                    placeholder="Zip"
+                  />
+                </div>
+              </div>
+              <div class="mb-4">
+                <label class="inline-flex items-center">
+                  <input type="checkbox" class="form-checkbox" />
+                  <span class="ml-2 text-gray-700">Check me out</span>
+                </label>
+              </div>
+              <div class="flex space-x-4 justify-center">
+                <button
+                  class="bg-blue-600 text-white px-4 py-2 rounded-md"
+                  type="submit"
+                >
+                  Submit
+                </button>
+                <button
+                  class="bg-black text-white px-4 py-2 rounded-md"
+                  type="button"
+                  onclick="resetForm()"
+                >
+                  Reset
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <footer class="flex justify-between p-7 bg-gray">
+          <span>&copy; Right 2024</span>
+          <div>
+            <a href="#">Privacy & Policy</a>
+            <a href="#">Terms & Conditions</a>
+          </div>
+        </footer>
+      </div>
+    </main>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

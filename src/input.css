@@ -36,4 +36,9 @@
   #main-content.active {
     @apply w-full ml-0;
   }
+
+  .active-tab {
+    @apply text-orange border-b-2 border-orange;
+  }
+  
 }

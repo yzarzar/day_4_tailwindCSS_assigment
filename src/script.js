@@ -265,3 +265,19 @@ function resetForm() {
   const errorElements = document.querySelectorAll(".text-red-500");
   errorElements.forEach((error) => error.classList.add("hidden"));
 }
+
+// Profile Page Services
+const tabs = document.querySelectorAll(".tab-button");
+const contents = document.querySelectorAll(".tab-content");
+
+tabs.forEach((tab, index) => {
+  tab.addEventListener("click", () => {
+    tabs.forEach((button) =>
+      button.classList.remove("active-tab")
+    );
+    tab.classList.add("active-tab");
+
+    contents.forEach((content) => content.classList.add("hidden"));
+    contents[index].classList.remove("hidden");
+  });
+});
